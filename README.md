@@ -1,59 +1,68 @@
-# Sistema de Farmácia
+# 💊 Sistema de Farmácia
 
-Projeto desenvolvido em Java com foco no gerenciamento de uma farmácia, permitindo controle de clientes, funcionários, fornecedores, medicamentos, usuários e vendas.
-
-## Descrição
-
-O sistema foi criado para automatizar processos básicos de uma farmácia, organizando informações de estoque, vendas e cadastros.
-
-Possui autenticação de usuários com níveis de acesso e geração de relatórios simples para controle interno.
-
-## Funcionalidades
-
-### Login
-- Autenticação de usuários
-- Controle de nível de acesso
-
-Login padrão:
-```text
-Login: admin
-Senha: 123
-```
+Projeto desenvolvido em Java com foco no gerenciamento de uma farmácia, permitindo controle completo de clientes, funcionários, fornecedores, medicamentos, usuários e vendas.
 
 ---
 
-## CRUDs Implementados
+## 📌 Descrição
 
-### Cliente
+O sistema foi criado para automatizar processos internos de uma farmácia, organizando informações de estoque, vendas e cadastros.
+
+Conta com autenticação de usuários, controle de acesso e relatórios simples para facilitar a administração do negócio.
+
+---
+
+## 🚀 Funcionalidades
+
+### 🔐 Login
+
+Autenticação de usuários com controle de acesso.
+
+**Login padrão:**
+
+- Usuário: `admin`
+- Senha: `123`
+
+---
+
+## 📋 CRUDs Implementados
+
+### 👤 Cliente
+
 - Cadastrar cliente
 - Listar clientes
 - Atualizar cliente
 - Excluir cliente
 
-### Fornecedor
+### 🚚 Fornecedor
+
 - Cadastrar fornecedor
 - Listar fornecedores
 - Atualizar fornecedor
 - Excluir fornecedor
 
-### Funcionário
+### 👨‍💼 Funcionário
+
 - Cadastrar funcionário
 - Listar funcionários
 - Atualizar funcionário
 - Excluir funcionário
 
-### Usuário
+### 👥 Usuário
+
 - Cadastrar usuário
 - Listar usuários
 - Atualizar usuário
 - Excluir usuário
 
-### Medicamento
+### 💊 Medicamento
+
 - Cadastrar medicamento
 - Listar medicamentos
 - Excluir medicamento
 
-### Venda
+### 🛒 Venda
+
 - Registrar venda
 - Listar vendas
 - Atualizar venda
@@ -61,7 +70,8 @@ Senha: 123
 
 ---
 
-## Relatórios
+## 📊 Relatórios
+
 - Relatório de estoque
 - Relatório de vendas
 - Produtos vencidos
@@ -69,37 +79,62 @@ Senha: 123
 
 ---
 
-## Arquitetura do Projeto
+## 🏗️ Arquitetura do Projeto
 
-O projeto foi organizado em camadas:
+O sistema foi organizado utilizando separação por camadas para facilitar manutenção e organização do código.
 
-### Model
+### 📁 Model
+
 Responsável pelas entidades do sistema:
+
 - Cliente
 - Fornecedor
-- Funcionário
+- Funcionario
 - Medicamento
-- Usuário
+- Usuario
 - Venda
-
-### Service
-Responsável pelas regras de negócio e CRUD:
-- ClienteService
-- FornecedorService
-- FuncionarioService
-- MedicamentosService
-- UsuarioService
-- VendaService
-
-### Main
-Responsável pela interação com usuário:
-- menus
-- login
-- navegação do sistema
 
 ---
 
-## Tecnologias Utilizadas
+### ⚙️ Service
+
+Responsável pelas regras de negócio e operações CRUD:
+
+- ClienteService
+- FornecedorService
+- FuncionarioService
+- MedicamentoService
+- UsuarioService
+- VendaService
+
+---
+
+### 🎮 Controller
+
+Responsável por receber ações do usuário e intermediar a comunicação entre o menu e a camada de serviço:
+
+- ClienteController
+- FornecedorController
+- FuncionarioController
+- MedicamentoController
+- UsuarioController
+- VendaController
+
+---
+
+### 🖥️ Main
+
+Responsável pela execução do sistema:
+
+- Inicialização
+- Menus
+- Login
+- Navegação
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
 - Java
 - Programação Orientada a Objetos (POO)
 - ArrayList
@@ -108,11 +143,12 @@ Responsável pela interação com usuário:
 
 ---
 
-## Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
-```text
+```bash
 src
 ├── Main.java
+│
 ├── Model
 │   ├── Cliente.java
 │   ├── Fornecedor.java
@@ -120,6 +156,15 @@ src
 │   ├── Medicamento.java
 │   ├── Usuario.java
 │   └── Venda.java
+│
+├── Controller
+│   ├── ClienteController.java
+│   ├── FornecedorController.java
+│   ├── FuncionarioController.java
+│   ├── MedicamentoController.java
+│   ├── UsuarioController.java
+│   └── VendaController.java
+│
 └── Service
     ├── ClienteService.java
     ├── FornecedorService.java
@@ -127,8 +172,19 @@ src
     ├── MedicamentoService.java
     ├── UsuarioService.java
     └── VendaService.java
+```
 
 ---
 
-## Autor
-Carlos Eduardo Gomes Filho
+## 👨‍💻 Autor
+
+**Carlos Eduardo Gomes Filho**
+
+🎓 Estudante de Ciência da Computação  
+💻 Desenvolvedor Java  
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
